@@ -19,19 +19,19 @@
   </tfoot>
 
   <tbody>
-    <% @products.each do |products| %>
+    <% @products.each do |product| %>
       <tr class="<%= cycle('bg-green-50', 'bg-white') %>">
         
         <td class="px-2 py-3">
-          <%= image_tag(products.image_url, class: 'w-40') %>
+          <%= image_tag(product.image_url, class: 'w-40') %>
         </td>
 
         <td>
-          <h1 class="text-xl front-bold mb-3"><%= products.title %>
+          <h1 class="text-xl front-bold mb-3"><%= product.title %>
           </h1>
           
           <p>
-            <%= truncate(strip_tags(products.description),
+            <%= truncate(strip_tags(product.description),
                          length: 80) %>
           </p>
         </td>
@@ -39,15 +39,15 @@
         <td class="px-3">
           <ul>
             <li>
-              <%= link_to 'Show', products, class: 'hover:underline' %>
+              <%= link_to 'Show', product, class: 'hover:underline' %>
             </li>
 
             <li>
-              <%= link_to 'Edit', edit_product_path(products), class: 'hover:underline' %>
+              <%= link_to 'Edit', edit_product_path(product), class: 'hover:underline' %>
             </li>
 
             <li>
-              <%= link_to 'Destroy', products, class: 'hover:underline', data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+              <%= link_to 'Destroy', product, class: 'hover:underline', data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
             </li>
           </ul>
         </td>
