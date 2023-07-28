@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:14
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password  # Replace with the actual password
+
+  web:
+    build:
+      context: .
+    volumes:
+      - ./log:/rails/log
+    secrets:
+      - source: master_key
+        target: /rails/config/master.key
+    ports:
+      - "8001:80"
+    depends_on:
+      - db
+
+secrets:
+  master_key:
+    file: ./config/master.key
+
+volumes:
+  pgdata:
+

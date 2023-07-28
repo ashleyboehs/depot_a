@@ -1,12 +1,11 @@
 class SupportRequestMailer < ApplicationMailer
-
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup
   #
   # en.support_request_mailer.respond.subject
   #
 
-  defalut from: "support@example.com"
+  default from: "support@example.com"
 
   def respond(support_request)
     @support_request = support_request
