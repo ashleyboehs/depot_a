@@ -1,6 +1,6 @@
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [depot_a] <a name="about-project"></a>
+# 📖 depot_a <a name="about-project"></a>
 
 > Storefront with side panel shopping cart, and spanish translation option.
 
