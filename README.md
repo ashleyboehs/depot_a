@@ -57,7 +57,7 @@
 
 > Add a link to your deployed project.
 
-- [Video Pending]
+- Video Pending
 
 
 <!-- GETTING STARTED -->
@@ -70,7 +70,7 @@
 In order to run this project you need the following installed locally:
 Ruby,
 Redis, and
-PostgreSQl.
+PostgreSQL.
 
 ### Setup
 
