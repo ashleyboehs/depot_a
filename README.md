@@ -57,7 +57,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://google.com)
+- [Video Pending]
 
 
 <!-- GETTING STARTED -->
